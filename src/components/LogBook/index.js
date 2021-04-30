@@ -1,6 +1,7 @@
 import { Col, Row, Table } from "antd";
 import React, { useState, useEffect } from "react";
 import { currencyFormat } from "../../utils";
+import styles from "./styles.module.css";
 
 function LogBook({ data, loading }) {
   const [modifyData, setModifyData] = useState([]);
@@ -103,7 +104,14 @@ function LogBook({ data, loading }) {
             </Row>
           </Col>
         </Row>
-        <Table dataSource={modifyData} columns={columns} loading={loading} />
+        <div className={styles.tableWrapper}>
+          <Table
+            dataSource={modifyData}
+            columns={columns}
+            loading={loading}
+            pagination="none"
+          />
+        </div>
       </Col>
     </Row>
   );
