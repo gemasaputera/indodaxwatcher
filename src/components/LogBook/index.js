@@ -109,7 +109,7 @@ function LogBook({ data, loading }) {
             dataSource={modifyData}
             columns={columns}
             loading={loading}
-            pagination="none"
+            pagination={{ position: ["none", "none"] }}
           />
         </div>
       </Col>

@@ -32,8 +32,8 @@ function Main() {
               if (el.ticker === "vidy_idr") {
                 return modData.push({
                   ...el,
-                  total_unit: 215773.23,
-                  total_fund: 11000000,
+                  total_unit: 246352.13,
+                  total_fund: 14500000,
                 });
               } else if (el.ticker === "trx_idr") {
                 return modData.push({
